@@ -1,0 +1,118 @@
+.Container{
+min-width: max-content;
+}
+.MainGridItem {
+  width: max-content;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 100vh;
+  padding: 0 !important;
+}
+.Rightside {
+  padding: 20px;
+}
+.list li {
+  list-style: none !important;
+  cursor: pointer;
+}
+.Rightside > div {
+  padding: 0px 5px;
+  width: 100% !important;
+  margin: 36px 0;
+}
+.Rightside h1 {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+.Poster {
+  background-image: url("../../Images/basketball.jpeg");
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  max-width: 290px;
+  height: 330px;
+  padding: 0px 0px !important;
+}
+
+.Poster h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  backdrop-filter: brightness(70%);
+  height: 100%;
+  width: 100%;
+  padding: 160px 20px 20px 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 1180px) {
+  .Poster {
+    max-width: 260px;
+  }
+  .Rightside > div {
+    padding: 0px;
+    padding-right: 20px;
+  }
+  .MainGridItem {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .Rightside {
+    width: 100%;
+  }
+  .MainGridItem{
+    justify-items: start;
+    padding-right: 20px;
+  }
+  .list{
+    width: 200px !important;
+  }
+  .Input{
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .Rightside > div {
+    padding: 10px !important;
+    width: 100%;
+  }
+  .Rightside {
+    padding: 0px;
+    width: 100%;
+  }
+  .MainGridItem{
+    padding: 10px;
+    height: max-content !important;
+  }
+  .list{
+    width: 300px !important;
+  }
+  .Input{
+    width: 300px;
+  }
+  .Poster {
+    display: none;
+  }
+}
+.InputEmail{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px 25px;
+    color: black;
+    border: 1px solid  rgba(0, 0, 0, 0.10);
+    width: 100%;
+}
+.InputEmail:focus,.SeacrhIcon:active {
+    outline: none;
+}
+.SeacrhIcon{
+    background-color: #3270fc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: 300ms;
+}
+.SeacContainer{
+    display: flex;
+}

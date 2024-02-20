@@ -1,0 +1,13 @@
+.GridBox{
+}
+.GridItems{
+    width: fit-content;
+}
+@media (max-width: 490px) {
+    .GridItems{
+        justify-items: center ;
+        margin: auto;
+       width: max-content;
+       
+    }
+}

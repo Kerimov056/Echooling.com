@@ -1,0 +1,61 @@
+.mainContainer{
+  background-image: url("../../Images/BackgoundImage1.png");
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover;
+padding: 120px 100px;
+min-height: min-content;
+}
+.Header{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+.GridBox {
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    color: white !important;
+    grid-row-gap: 170px; /* Add this line to set padding between rows */
+  }
+  .GridItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Conatiner{
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 900px) {
+    .mainContainer {
+      padding: 60px 20px; 
+    }
+    .GridBox {
+      grid-row-gap: 30px; 
+    }
+  }
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 60px 20px; 
+  }
+  .GridBox {
+    grid-row-gap: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: 40px 20px; 
+  }
+  .GridBox {
+    grid-row-gap: 0px; 
+  }
+}
+
+
+
+
+
